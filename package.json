@@ -1,0 +1,41 @@
+{
+    "name"    : "yuiconfig",
+    "version" : "0.0.1",
+    
+    "description" : "YUI config object utility library",
+    "keywords"    : "yui esprima escodegen ast parsing",
+    "homepage"    : "https://github.com/tivac/yuiconfig",
+    "bugs"        : "https://github.com/tivac/yuiconfig/issues",
+    "author"      : "Pat Cavit <pcavit@gmail.com> (http://patcavit.com)",
+    
+    "repository" : {
+        "type" : "git",
+        "url"  : "git://github.com/tivac/yuiconfig.git"
+    },
+    
+    "main" : "./lib/index.js",
+    
+    "directories" : {
+        "lib"  : "./lib"
+    },
+    
+    "dependencies" : {
+        "esprima"   : "1.0.x",
+        "escodegen" : "0.0.x",
+        "traverse"  : "0.6.x"
+    },
+    
+    "devDependencies" : {
+        "istanbul" : "0.1.x",
+        "mocha"    : "1.8.x",
+        "chai"     : "1.4.x"
+    },
+    
+    "scripts" : {
+        "test"  : "istanbul test ./node_modules/mocha/bin/_mocha -- --ignore-leaks"
+    },
+    
+    "engine": {
+        "node": ">=0.8"
+    }
+}
