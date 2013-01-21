@@ -22,17 +22,18 @@
     "dependencies" : {
         "esprima"   : "1.0.x",
         "escodegen" : "0.0.x",
-        "traverse"  : "0.6.x"
+        "traverse"  : "0.6.x",
+        "redefine"  : "0.1.x"
     },
     
     "devDependencies" : {
         "istanbul" : "0.1.x",
-        "mocha"    : "1.8.x",
-        "chai"     : "1.4.x"
+        "mocha"    : "1.8.x"
     },
     
     "scripts" : {
-        "test"  : "istanbul test ./node_modules/mocha/bin/_mocha"
+        "test"  : "istanbul test ./node_modules/mocha/bin/mocha",
+        "watch" : "supervisor -n exit -q -i node_modules -- ./node_modules/mocha/bin/mocha"
     },
     
     "engine": {
