@@ -23,7 +23,8 @@
         "esprima"   : "1.0.x",
         "escodegen" : "0.0.x",
         "traverse"  : "0.6.x",
-        "redefine"  : "0.1.x"
+        "redefine"  : "0.1.x",
+        "lodash"    : "1.0.x"
     },
     
     "devDependencies" : {
